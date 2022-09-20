@@ -20,8 +20,8 @@ array1 = ['a', 'b', 'c', 'x']
 array2 = ['z', 'y', '4']
 
 def contains_common_item(arr1, arr2):
-    arr_dict = convert_dict(arr1)
-    print(is_there_repeated(arr_dict, arr2))
+    arr_dict = convert_dict(arr1) # O(len(dict))
+    print(is_there_repeated(arr_dict, arr2)) # O(n)
 
 
 def convert_dict(arr):
