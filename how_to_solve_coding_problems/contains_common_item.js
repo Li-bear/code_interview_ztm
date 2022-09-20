@@ -13,7 +13,17 @@ const array1 = [ 1, 'b', 'c', 'c'];
 const array2 = ['z', 'z', 'r'];
 
 // Brute approach:
-function containsCommonItemFor(arr1, arr2)
+// O(a*b) - Time complexity
+// O(1) - Space Complexity
+function containsCommonItemFor(arr1, arr2){
+    for(let i = 0; i < arr1.length; i++){
+        for(let j = 0; j < arr2.length; i++){
+            if(arr1[i] == arr2[j]){
+                return true;
+            }
+        }
+    }
+}
 
 // array1 ==> obj { convert array one into an object(hash tables in JS)
 // a: true,
@@ -33,6 +43,9 @@ function containsCommonItem(arr1, arr2){
     // Improves:
     // can we assume always 2 params?
     // can we assume always 2 arrays pass as param?
+    // Modularize our code, creating specific functions, for examples
+    // a function to create object ot to find the matches in an object
+    // Small pieces of code
 
     let map = {}
     for (let i = 0; i < arr1.length; i++){
