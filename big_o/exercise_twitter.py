@@ -13,7 +13,7 @@ print(tweets[len(tweets) - 1]) # O(1)
 # increase depending of the input size 
 
 # Second part, comparing dates will be an O(n^2)
-# TODO: what is the big O notation?
+# what is the big O notation? O(n)
 
 tweets = [['hi', 2012], ['second', 2014], ['hey', 2018]]
 
